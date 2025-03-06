@@ -6,7 +6,7 @@
   --lighter-gray: #eaeaea;
   --light-gray: #dedede;
   --gray: #b4b4b4;
-  --dark-gray: #676767;
+  --dark-gray: #727171;
   --black: #1d1d1f;
 
   /* COLORS */
@@ -111,9 +111,6 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-}
 
 /* COOKIES */
 #cookies {

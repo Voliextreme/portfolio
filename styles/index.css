@@ -5,6 +5,7 @@
 }
 /* NAV */
 nav {
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -12,6 +13,7 @@ nav {
   align-items: center;
   padding: 1rem 10rem;
   background-color: var(--black);
+  z-index: 99;
 }
 
 /* NAV LOGO */
@@ -113,12 +115,21 @@ nav ul li:hover {
 
 .experience h2{
   color : var(--white);
-  
 }
 
-.experience li ,.experience p{
-  margin-left: 1rem;
-  color: var(--gray) !important;
+.experience h3{
+  font-weight: var(--font-weight-light);
+  color : var(--white);
+}
+
+.experience li{
+  color: var(--dark-gray) !important;
+}
+
+
+.experience ul{
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
 }
 
 .projects {
@@ -145,6 +156,7 @@ nav ul li:hover {
 .project-card:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 0 0.1rem var(--light-gray);
+  z-index: 0;
 }
 
 .project-card img {
