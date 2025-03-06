@@ -7,7 +7,8 @@
   --light-gray: #dedede;
   --gray: #b4b4b4;
   --dark-gray: #727171;
-  --black: #1d1d1f;
+  --darker-gray: #272626;
+  --black: #1a1a1b;
 
   /* COLORS */
   --dark-red: #a52a2a;
@@ -36,6 +37,7 @@
   --dark-shadow: rgba(0, 0, 0, 0.3);
   --shadow: rgba(0, 0, 0, 0.2);
   --light-shadow: rgba(0, 0, 0, 0.1);
+  --white-shadow: rgba(75, 74, 74, 0.3);
 
   /* FONTs */
   --font-family-default: 'Raleway', sans-serif;
