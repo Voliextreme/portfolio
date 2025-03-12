@@ -91,7 +91,7 @@ body {
 }
 
 main {
-  height: calc(100vh - 50px);
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
 }

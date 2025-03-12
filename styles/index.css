@@ -107,7 +107,7 @@ nav ul li:hover {
 
 /* EXPERIENCE */
 
-.experience{
+.experience {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -115,21 +115,20 @@ nav ul li:hover {
   background-color: var(--black);
 }
 
-.experience h2{
-  color : var(--white);
+.experience h2 {
+  color: var(--white);
 }
 
-.experience h3{
+.experience h3 {
   font-weight: var(--font-weight-light);
-  color : var(--white);
+  color: var(--white);
 }
 
-.experience li{
+.experience li {
   color: var(--dark-gray) !important;
 }
 
-
-.experience ul{
+.experience ul {
   margin-bottom: 1rem;
   padding-left: 1.2rem;
 }
@@ -183,7 +182,7 @@ nav ul li:hover {
 
 /* ABOUT ME */
 
-.about-me{
+.about-me {
   width: 100%;
   height: 100%;
   display: flex;
@@ -193,18 +192,18 @@ nav ul li:hover {
   gap: 4rem;
 }
 
-.about-me h2{
-  color : var(--white);
+.about-me h2 {
+  color: var(--white);
 }
 
-.info{
+.info {
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.skills{
+.skills {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -212,10 +211,9 @@ nav ul li:hover {
   padding-top: 2rem;
   flex-wrap: wrap;
   background-color: var(--black);
-  
 }
 
-.skill-card{
+.skill-card {
   width: 250px;
   height: 200px;
   background-color: var(--darker-gray);
@@ -228,10 +226,9 @@ nav ul li:hover {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-
 }
 
-.photo{
+.photo {
   width: fit-content;
   height: 100%;
   display: flex;
@@ -239,7 +236,7 @@ nav ul li:hover {
   align-items: center;
 }
 
-#photo{
+#photo {
   width: 400px;
   height: auto;
   border-radius: 100px;
@@ -247,13 +244,49 @@ nav ul li:hover {
   box-shadow: 0 1rem 2rem var(--white-shadow);
 }
 /*------------------------------- MEDIA QUERIES ------------------------------------*/
-@media (width < 1024px) {
+@media (width < 1200px) {
   nav {
     padding: 1rem 5rem;
   }
 
   .page {
     padding: 2rem 0;
+  }
+  .page h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .page p {
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .page button {
+    padding: 0.7rem 1.5rem;
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+  }
+  .experience {
+    margin: 2rem;
+  }
+  .project-card {
+    width: 50%;
+  }
+  .about-me {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .skills {
+    width: 90%;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  #photo {
+    width: 250px;
   }
 }
 @media (width < 768px) {
@@ -294,5 +327,32 @@ nav ul li:hover {
   }
   .projects {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .project-card {
+    width: 90%;
+  }
+  .about-me {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .info p {
+    width: 90%;
+    align-self: center;
+  }
+  .skills {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .skill-card {
+    width: 100%;
+    height: auto;
+  }
+  .photo {
+    width: 100%;
+    justify-content: center;
+  }
+  #photo {
+    width: 200px;
   }
 }
